@@ -5,5 +5,5 @@
   This is a basic simple game where you need to guess the number in the given number of time which is one minute and the player will be given totally three chances to guess the correct number to win the game
 
 
-  files inculded:
+  files included:
    index.html,styles.css,game.html,game.css,game1.html,games1.css,main.html,main.css
