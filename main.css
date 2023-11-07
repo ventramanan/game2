@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('https://th.bing.com/th/id/R.5a4a4569e69da4c15f52ee61de886733?rik=%2bTnryk4JEB52MA&riu=http%3a%2f%2fwww.jenningswire.com%2fwp-content%2fuploads%2f2012%2f12%2fbigstock-mathematics-25125299.jpg&ehk=xBgXT3zFQGqWUef43JSk3GWlnhFZ4KH%2fiAvu%2bGTbBsE%3d&risl=&pid=ImgRaw&r=0'); 
+    background-size: cover;
+  }
+  
+  .container {
+    text-align: center;
+    background-color: rgb(245, 201, 207); 
+    padding: 50px;
+    border-radius: 10px;
+    border: 2px solid #333; 
+    box-shadow: rgba(81, 112, 126, 0.35) 0px 5px 15px;
+  }
+  
+  input {
+    width: 50px;
+    padding: 5px;
+  }
+  
+  button {
+    padding: 8px;
+    cursor: pointer;
+  }

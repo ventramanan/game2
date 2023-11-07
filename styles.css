@@ -1,0 +1,28 @@
+body{
+    font-family: "cursive",sans-serif;
+    background-image: url("https://thumbs.dreamstime.com/b/modern-blue-abstract-background-transparent-squares-simple-mosaic-pattern-vector-illustration-152962004.jpg");
+    background-size: cover;
+    color: #ffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+#title{
+    font-size: 3em;
+    margin-bottom: 400px;
+    text-shadow: 10px 20px 100px rgb(0, 0, 0.0.8);
+}
+#start{
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    margin-bottom: 200px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+#start-button:hover{
+    background-color: blue;
+}
