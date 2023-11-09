@@ -26,9 +26,9 @@ function guessNumber(){
             if(userGuess===secretNumber){
                 endGame("congratulations you! won the game")
             }else if(userGuess<secretNumber){
-                resultMessage.innerHTML="Too low"
+                resultMessage.innerHTML="Low but your near try again"
             }else{
-                resultMessage.innerHTML="Too high"
+                resultMessage.innerHTML="high but your near try again"
             }
             chances--
             Dispaly.textContent=chances

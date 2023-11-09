@@ -12,18 +12,41 @@ body {
   .container {
     text-align: center;
     background-color: rgb(245, 201, 207); 
-    padding: 50px;
+    padding: 20px;
     border-radius: 10px;
     border: 2px solid #333; 
     box-shadow: rgba(81, 112, 126, 0.35) 0px 5px 15px;
+    max-width: 80%;
+    margin: 10px;
   }
   
   input {
-    width: 50px;
-    padding: 5px;
+    width: 80%;
+    max-width: 200px;
+    padding: 10px;
   }
   
   button {
-    padding: 8px;
+    padding: 10px;
     cursor: pointer;
+  }
+  p{
+    padding: 15px 30px;
+    color: #2196f3;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.2s;
+  }
+  p:hover{
+    color:#255784;
+    background: #2196f3;
+    box-shadow:0 0 10px #2196f3, 0 0 40px ,0 0 80px #2196f3;
+    transition-delay: 1s;
+    margin-left: 10px;
+  }
+  .words{
+    color: rgb(245, 6, 181);
   }

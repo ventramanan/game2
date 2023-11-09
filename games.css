@@ -17,7 +17,8 @@ form {
     background: rgba(0, 0, 0, 0.7);
     padding: 20px;
     border-radius: 10px;
-    box-shadow:rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;;
+    box-shadow:rgba(56, 56, 150, 0.2) 0px 7px 29px 0px;
+    border-radius: 40px;
 }
 
 input {
@@ -26,8 +27,21 @@ input {
     width: 100%;
     box-sizing: border-box;
 }
-
-button {
+p:hover{
+    color: blue;
+}
+#bt-n{
+    background-color: black;
+    color: white;
+    padding:10px 20px;
+    border-radius:5px ;
+    cursor: pointer;
+}
+#bt-n:hover{
+    box-shadow:0 0 5px black, 0 0 25px black,0 0 50px black,0 0 100px black,0 0 200px black;
+}
+#bt{
+    box-shadow: 0 0 5px #4CAF50, 0 0 25px #4CAF50;
     padding: 10px 20px;
     background-color: #4CAF50;
     color: white;
@@ -35,20 +49,29 @@ button {
     border-radius: 5px;
     cursor: pointer;
 }
-p{
-    font-size: 30px;
-    text-shadow: 
-    1px 0px 1px #ccc, 0px 1px 1px #eee, 
-    2px 1px 1px #ccc, 1px 2px 1px #eee,
-    3px 2px 1px #ccc, 2px 3px 1px #eee,
-    4px 3px 1px #ccc, 3px 4px 1px #eee,
-    5px 4px 1px #ccc, 4px 5px 1px #eee,
-    6px 5px 1px #ccc, 5px 6px 1px #eee,
-    7px 6px 1px #ccc;
+#bt:hover{
+    box-shadow: 0 0 5px #4CAF50, 0 0 25px #4CAF50,0 0 50px #4CAF50,0 0 100px #4CAF50,0 0 200px #4CAF50;
 }
-p:hover{
-    color: blue;
+#main{
+    position: relative;
+    font-size: 2em;
+    letter-spacing: 0px;
+    color: #0e3742;
+    text-transform: uppercase;
+    width: 100%;
+    -webkit-box-reflect:below 1px linear-gradient(transparent,black);
+    line-height: 0.5em;
+    outline: none;
+    animation:  animate  5s linear infinite;
 }
-#bt-n{
-    background-color: black;
+@keyframes animate{
+    0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%{
+        color: #0e3742;
+        text-shadow: none;
+    }
+    18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%{
+        color: white;
+        text-shadow: 0 0 20px #03bcf4,0 0 40px #03bcf4,0 0 80px #03bcf4,0 0 160px #03bcf4;
+    }
+   
 }

@@ -9,20 +9,47 @@ body{
     height: 100vh;
     margin: 0;
 }
-#title{
-    font-size: 3em;
-    margin-bottom: 400px;
-    text-shadow: 10px 20px 100px rgb(0, 0, 0.0.8);
+#head-line{
+    font-size: 5vw;
+    margin-top: 250px;
+    text-shadow:  20px 2px 4px  black;
 }
-#start{
-    font-size: 1.5rem;
-    padding: 10px 20px;
-    margin-bottom: 200px;
-    background-color: #4CAF50;
-    color: white;
+
+#head-line:hover{
+    color: palevioletred;
+}
+#tag-line{
+ 
+    line-height: 1.8;
+    font-style: oblique;
+    font-weight:300px ;
+    font-size:2.5vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+button{
+    box-shadow: 0 0 5px #4CAF50, 0 0 25px #4CAF50;
+    padding:1.5vh 3vw;
+    border-radius:5px;
+    font-size: 2vw;
     border: none;
-    border-radius: 5px;
+    background-color: lightgreen;
+    color: white;
 }
-#start-button:hover{
-    background-color: blue;
+button:hover{
+    box-shadow: 0 0 5px #4CAF50, 0 0 25px #4CAF50,0 0 50px #4CAF50,0 0 100px #4CAF50,0 0 200px #4CAF50;
+}
+@media only screen and (max-width:600px){
+    #head-line{
+        font-size: 1.8em;
+        margin-top: 340px;
+        margin-left: 15px;
+        
+    }
+    #tag-line{
+        font-size: 18px;
+    }
+    button{
+        font-size: 1.0em;
+    }
 }
