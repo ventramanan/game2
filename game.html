@@ -1,48 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Enter the World of Numbers</title>
     <link rel="stylesheet" href="games.css">
 </head>
-    <form id="userInfoForm">
-        <div id="contant">
+<form id="userInfoForm">
+    <div id="contant">
         <h2 id="main">Enter the world of numbers</h2>
-        </div>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required placeholder="Enter your Name">
+    </div>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required placeholder="Enter your Name">
 
-        <label for="nickname">Nickname:</label>
-        <input type="text" id="nickname" name="nickname" required placeholder="Enter your nick name">
+    <label for="nickname">Nickname:</label>
+    <input type="text" id="nickname" name="nickname" required placeholder="Enter your nick name">
 
-        <button id="bt" type="button" onclick="saveUserInfo()">Save Info</button>
-        <button id="bt-n">Start the Game</button>
-    </form>
-    <script>
-        function saveUserInfo() {
-            var username = document.getElementById("name").value;
-            var usernickname = document.getElementById("nickname").value;
+    <button id="bt" type="button" onclick="saveUserInfo()">Save Info</button>
+    <button id="bt-n">Start the Game</button>
 
-            if (username && usernickname) {
-                var userInfo = {
-                    username: username,
-                    usersnickname: usernickname,
-                };
-
-                localStorage.setItem("userInfo", JSON.stringify(userInfo));
-
-                alert("Welcome, " + username + "! Your info has been saved successfully!");
-            } else {
-                alert("Please fill in both name and nickname fields.");
-            }
-        }
-        var button = document.getElementById("bt-n");
-
-        button.addEventListener("click", () => {
-            window.location.href = "game1.html";
-        });
-    </script>
+</form>
 </body>
 </html>
-
+<script src="./app3.js"></script>

@@ -10,7 +10,7 @@
     <div class="container">
         <h1>Guess the Number Game</h1>
         <p class="words">Guess a number between 1 and 10:</p>
-        <input type="number" id="guessInput" min="1" max="100">
+        <input type="number" id="guessInput" min="0" max="20" placeholder="enter the number">
         <button onclick="guessNumber()">Submit Guess</button>
         <p id="result"></p>
         <p class="words">Chances left: <span id="chances">3</span></p>
@@ -19,10 +19,15 @@
     <script src="app.js"></script>
 </body>
 <p id="button"> play again</p>
+<buttonn id="back">back</button>
 </html>
 <script>
     var bt=document.getElementById("button")
     bt.addEventListener("click",()=>{
         window.location.reload();
+    })
+    var button=document.getElementById("back")
+    button.addEventListener("click",() =>{
+        window.location.href="./game.html"
     })
 </script>

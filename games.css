@@ -75,3 +75,13 @@ p:hover{
     }
    
 }
+@media screen and (max-width:600px){
+    #main{
+        font-size: 1.8em;
+    }
+}
+@media screen and (max-with:500px){
+    #main{
+        font-size:1.5em
+    }
+}

@@ -1,6 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
@@ -30,9 +31,9 @@ body {
     padding: 10px;
     cursor: pointer;
   }
-  p{
+  #button{
     padding: 15px 30px;
-    color: #2196f3;
+    color: white;
     text-transform: uppercase;
     letter-spacing: 4px;
     text-decoration: none;
@@ -40,8 +41,8 @@ body {
     overflow: hidden;
     transition: 0.2s;
   }
-  p:hover{
-    color:#255784;
+  #button:hover{
+    color: white;
     background: #2196f3;
     box-shadow:0 0 10px #2196f3, 0 0 40px ,0 0 80px #2196f3;
     transition-delay: 1s;
@@ -49,4 +50,22 @@ body {
   }
   .words{
     color: rgb(245, 6, 181);
+  }
+  #back{
+    padding: 20px 30px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.2s;
+    border-radius: 5%;
+  }
+  #back:hover{
+    color:white;
+    background: black;
+    box-shadow:0 0 10px black, 0 0 40px ,0 0 80px black;
+    transition-delay: 1s;
+    margin-left: 10px;
   }

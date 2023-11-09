@@ -7,14 +7,13 @@
     width: 70%;
     max-width: 700px; 
     height: 400px;
-    margin: 150px auto; 
+    margin: 10% auto; 
     border-radius: 10%;
     margin-bottom:20px;
-
 }
 
 li {
-    font-size: 25px;
+    font-size: 3vw;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -25,6 +24,17 @@ p {
 #rules {
     color: white;
 }
+#dis{
+    color: white;
+    font-size: 1.5vw;
+}
+#rle{
+    color: white;
+    font-size: 1.5vw;
+}
+#para{
+    color: white;
+}
 
 #head-line {
     color: white;
@@ -33,6 +43,8 @@ p {
     font-size: 3vw;
     -webkit-text-stroke:0.5vw #383d52 ;
     text-transform: uppercase; 
+    position: relative;
+    top: 50px;
 }
 #head-line::before{
     content: attr(data-text);
@@ -56,28 +68,53 @@ p {
         width: 100%;
     }
 }
-
-#bt-n {
+#btn{
+    box-shadow: 0 0 5px white, 0 0 25px white;
+    padding:1% 2%;
+    border-radius:5px;
+    font-size: 2vw;
+    border: none;
     background-color: black;
     color: white;
-    padding: 20px 30px;
-    display: inline-block; 
-    display: flex;
-    margin-left: 670px;
-    position: relative;
-    bottom: 65px; 
-    display: inline-block;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    border: 1px solid white;
-}
- 
-#bt-n:hover {
-    background-color: white;
-    color: black;
-}
-@media only screen and (max-width:600px){
+    /* margin: 5% auto; */
+    position: absolute;
+    top: 90%;
+    left: 48%;
+    transform: translate(-50%, -10%);
+
     
 }
+#btn:hover{
+    box-shadow: 0 0 5px white, 0 0 25px white,0 0 50px white,0 0 100px white,0 0 200px white;
+}
+@media screen and (max-width:600px){
+    #container{
+        width: 90%;
+        position: relative;
+        top: 30px;
+    }
+    #btn{
+        top: 80%;
+        padding: 20px;
+        font-size: 20px;  
+    }
+    #dis{
+        font-size: 20px;
+    }
+    #rle{
+        font-size:20px ;
+    }
+    #head-line{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:426px){
+    #rules{
+       font-size:14px;
+    }
+    #para{
+        font-size: 14px;
+    }
 
-
+}
 
