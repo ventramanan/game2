@@ -24,23 +24,33 @@
         </ul>
     </div>
     <button id="btn">Start The game</button>
-    <audio id="ew"  loop autoplay>
-        <source src="./assests/soft.mp3" type="audio/mp3">
-        Your browser does not support the audio element.
-    </audio>
+    <audio id="myaudio" src="./assests/welcome-to-china-139329.mp3"></audio>
+    <img id="play" src="./assests/volume.png" class="play" alt="">
 </body>
 </html>
 <script>
-    var audio =  document.getElementById("ew")
-    document.addEventListener("load",function(){
-        audio.play()
-        audio.volume = 0.5
-    })
     var button=document.getElementById("btn")
         button.addEventListener("click", () => {
             window.location.href = "./main.html";
         });
-    
-    // audio.play()
-    // window.onload = audio.play()
+    document.addEventListener("DOMContentLoaded",function (){
+    const playButton=document.getElementById("play")
+    const audio=document.getElementById("myaudio")
+    playButton.addEventListener("click",function(){
+        if(audio.paused){
+            audio.play();
+        }else{
+            audio.pause()
+        }
+    });
+    audio.addEventListener("ended",function(){
+        playButton.style.backgroundColor="#34398db"
+    })
+    audio.addEventListener("pause",function (){
+        playButton.style.backgroundColor="#3498db"
+    })
+    audio.addEventListener("play",function (){
+        playButton.style.backgroundColor="red"
+    })
+})
 </script>

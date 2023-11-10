@@ -39,31 +39,11 @@ button{
 button:hover{
     box-shadow: 0 0 5px #4CAF50, 0 0 25px #4CAF50,0 0 50px #4CAF50,0 0 100px #4CAF50,0 0 200px #4CAF50;
 }
-.play-button{
-    width: 70px;
-    height: 70px;
-    background-color: black;
-    border-radius: 40%;
-    cursor: pointer;
-    position: relative;
-}
-.play-button::before{
-    content: "";
+.play{
+    height: 6vh;
     position: absolute;
-    top: 50%;
-    left: 100%;
-    transform: translate(-50%,-50%);
-}
-.play-button::before{
-    width: 30px;
-    height: 60px;
-}
-.play-button::after{
-    content: "▶";
-    position: relative;
-    left: 25px;
-    top: 16px;
-    font-size: 2em;  
+    top: 10px;
+    left: 20px;
 }
 
 @media only screen and (max-width:600px){

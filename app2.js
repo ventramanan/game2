@@ -4,7 +4,7 @@ button.addEventListener("click", () => {
 });
 
 document.addEventListener("DOMContentLoaded",function (){
-    const playButton=document.getElementById("playButtons")
+    const playButton=document.getElementById("play")
     const audio=document.getElementById("myaudio")
     playButton.addEventListener("click",function(){
         if(audio.paused){
