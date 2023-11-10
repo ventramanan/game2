@@ -22,7 +22,7 @@ function guessNumber() {
     const guessInput = document.getElementById("guessInput")
     const resultMessage = document.getElementById("result")
     const Dispaly = document.getElementById("chances")
-    if (chances > 0 || timer > 0) {
+    if (chances > 0 && timer > 0) {
         console.log("check 1")
         const userGuess = parseInt(guessInput.value)
         if (!isNaN(userGuess)) {
@@ -38,19 +38,13 @@ function guessNumber() {
 
             }
             chances--;
-            console.log("chhhhh", chances)
-
-
             Dispaly.textContent = chances
 
         } else {
             alert("plase enter a valid number")
         }
         guessInput.value = '';
-    } else if (chances == 0) {
-        console.log("check 2")
-        endGame(`Game over! ${username} you have no more turns`)
-    }
+    } 
 
 }
 // this function use to end the game
