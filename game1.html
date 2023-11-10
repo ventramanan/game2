@@ -11,24 +11,36 @@
     <div id="container">
         <ul><br>
             <li id="dis"> Description</li>
-            <p id="para">This game is all about a single player and this game is based on guessing a number The player will be giving some amount of chances and a time limit of few minute<br>and the player need to guess the number</p>
+            <p id="para">This game is all about a single player and this game is based on guessing a number The player will be given some amount of chances and a time limit of few minute<br>and the player need to guess the number</p>
         </ul>
         <br>
         <ul>
             <li id="rle">Rules</li>
             <p id="rules">
-                 <br>1. The will be giving a time limit he/she should not exceed the time limit<br>
-                 <br>2. Totally the player will be given woith three chances to guess the number correctly<br>
-                 <br>3.If the  the above the things are not being followed means<br>
+                 <br>1. The player will be given a time limit he/she should not exceed the time limit<br>
+                 <br>2. Totally the player will be given with three chances to guess the number correctly<br>
+                 <br>3.If the above the things are not being followed means the game will over<br>
             </p>
         </ul>
     </div>
     <button id="btn">Start The game</button>
+    <audio id="ew"  loop autoplay>
+        <source src="./assests/soft.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
 </body>
 </html>
 <script>
+    var audio =  document.getElementById("ew")
+    document.addEventListener("load",function(){
+        audio.play()
+        audio.volume = 0.5
+    })
     var button=document.getElementById("btn")
         button.addEventListener("click", () => {
             window.location.href = "./main.html";
         });
+    
+    // audio.play()
+    // window.onload = audio.play()
 </script>
