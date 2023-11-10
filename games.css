@@ -6,6 +6,7 @@ body {
     background-size: cover;
     background-position: center;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
@@ -63,6 +64,35 @@ p:hover{
     line-height: 0.5em;
     outline: none;
     animation:  animate  5s linear infinite;
+}
+.play-button{
+    width: 70px;
+    height: 70px;
+    background-color: rgb(96, 6, 96);
+    border-radius: 40%;
+    cursor: pointer;
+    position: relative;
+}
+.play-button::before{
+    content: "";
+    position: absolute;
+    top: 60%;
+    left: 100%;
+    transform: translate(-50%,-50%);
+}
+.play-button::before{
+    width: 30px;
+    height: 60px;
+}
+.play-button::after{
+    content: "▶";
+    position: relative;
+    left: 5px;
+    top: 16px;
+    font-size: 2em;  
+}
+.play-button{
+    margin-top: 10px;
 }
 @keyframes animate{
     0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%{

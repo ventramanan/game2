@@ -30,6 +30,14 @@ body {
   button {
     padding: 10px;
     cursor: pointer;
+    border: none;
+  }
+  button:hover{
+    color: white;
+    background: #f37c21;
+    box-shadow:0 0 10px #2196f3, 0 0 40px ,0 0 80px #2196f3;
+    transition-delay: 1s;
+    margin-left: 10px;
   }
   #button{
     padding: 15px 30px;
@@ -69,3 +77,4 @@ body {
     transition-delay: 1s;
     margin-left: 10px;
   }
+  
