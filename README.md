@@ -6,4 +6,4 @@
 
 
   files included:
-   index.html,styles.css,game.html,game.css,game1.html,games1.css,main.html,main.css
+   index.html,styles.css,game.html,game.css,game1.html,games1.css,main.html,main.css,app.js,app1.js,app3.js
